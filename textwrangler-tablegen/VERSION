@@ -1,0 +1,7 @@
+TableGen.plist
+
+v0.1
+--------------------------------------------------------------------------------
+Initial version, has basic syntax highlighting and partially functional folding
+for defs and classes.  Releasing as open source under the University of 
+Illinois/NCSA Open Source License.   Enjoy!
