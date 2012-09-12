@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple/DTD PLIST 1.0//EN"
+				"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+	<key>BBEditDocumentType</key>	     				<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key> 				<string>Tablegen</string>
+	<key>BBLMLanguageCode</key>				 				<string>TGEN</string>
+	<key>BBLMPreferredFilenameExtension</key> <string>td</string>
+	<key>BBLMSupportTextCompletion</key>			<true/>
+  <key>BBLMScansFunctions</key>             <true/>
+	<key>BBLMCanSpellCheckCodeRuns</key>			<false/>
+	<key>BBLMCommentPrefixDefault</key>       <string>/*</string>
+	<key>BBLMCommentSuffixDefault</key>       <string>*/</string>
+	<key>BBLMIsCaseSensitive</key>						<true/>
+	<key>BBLMColorsSyntax</key>								<true/>
+	<key>BBLMSuffixMap</key>
+	  <array>
+	    <dict>
+	      <key>BBLMLanguageSuffix</key>
+	      <string>.td</string>
+	    </dict>
+	  </array>
+	<key>BBLMKeywordList</key>
+	  <array>
+	    <string>class</string>
+	    <string>multiclass</string>
+	    <string>let</string>
+	    <string>def</string>
+	    <string>defm</string>
+	    <string>field</string>
+	    <string>include</string>
+	    <string>in</string>
+	    <string>int1</string>
+	    <string>int8</string>
+	    <string>int16</string>
+	    <string>int32</string>
+	    <string>int64</string>
+	    <string>uint8</string>
+	    <string>uint16</string>
+	    <string>uint32</string>
+	    <string>uint64</string>
+ 	    <string>i1</string>
+ 	    <string>i8</string>
+ 	    <string>i16</string>
+ 	    <string>i32</string>
+ 	    <string>i64</string>
+	    <string>string</string>
+ 	    <string>opnode</string>
+ 	    <string>Inst</string>
+ 	    <string>set</string>
+ 	    <string>bits</string>
+ 	    <string>bit</string>
+	  </array>
+	<key>BBLMPredefinedNameList</key>
+	  <array>
+	    <string>SDNode</string>
+	    <string>ParserMatchClass</string>
+	    <string>Name</string>
+ 	    <string>BinOpWithFlagFrag</string>
+ 	    <string>PatFrag</string>
+ 	    <string>BinOpFrag</string>
+ 	    <string>UnOpFrag</string>
+ 	    <string>getZExtValue</string>
+ 	    <string>ComputeNumSignBits</string>
+ 	    <string>SDValue</string>
+ 	    <string>EncoderMethod</string>
+ 	    <string>OperandType</string>
+ 	    <string>DecoderMethod</string>
+ 	    <string>Operand</string>
+ 	    <string>AsmOperandClass</string>
+ 	    <string>PrintMethod</string>
+ 	    <string>getTargetConstant</string>
+ 	    <string>MIOperandInfo</string>
+ 	    <string>ComplexPattern</string>
+ 	    <string>SDNodeXForm</string>
+ 	    <string>Requires</string>    
+ 	    <string>Inst</string>
+ 	    <string>PseudoInst</string>
+ 	    <string>Defs</string>
+ 	    <string>Uses</string>
+ 	    <string>hasSideEffects</string>
+ 	    <string>mayLoad</string>
+ 	    <string>mayStore</string>
+ 	    <string>usesCustomInserter</string>
+ 	    <string>neverHasSideEffects</string>
+ 	    <string>isNotDuplicable</string>
+ 	    <string>InstrItinClass</string>
+ 	    <string>AddressMode</string>
+ 	    <string>InstAlias</string>
+ 	    <string>!strconcat</string>
+ 	    <string>Instruction</string>
+ 	    <string>!cast</string>
+ 	    <string>isRematerializable</string>
+ 	    <string>canFoldAsLoad</string>
+ 	    <string>isBranch</string>
+ 	    <string>isTerminator</string>
+ 	    <string>isMoveImm</string>
+ 	    <string>RegConstraint</string>
+ 	    <string>isBarrier</string>
+ 	    <string>isIndirectBranch</string>
+	    <string>and</string>
+	    <string>xor</string>
+	    <string>fmul</string>
+	    <string>fadd</string>
+	    <string>fsub</string>
+	    <string>return</string>
+	    <string>or</string>
+	    <string>shl</string>
+	    <string>srl</string>
+	    <string>sra</string>
+	    <string>rotr</string>	 
+ 	    <string>load</string>
+ 	    <string>zextloadi16</string>
+ 	    <string>sextloadi16</string>
+ 	    <string>zextloadi8</string>
+ 	    <string>sextloadi8</string>
+ 	    <string>PKHTB</string>
+ 	    <string>REVSH</string>
+ 	    <string>bswap</string>
+ 	    <string>ctlz</string>	    
+ 	    <string>AddedComplexity</string>
+ 	    <string>mul</string>
+ 	    <string>add</string>
+ 	    <string>sext_inreg</string>
+ 	    <string>MnemonicAlias</string>
+ 	    <string>hasPostISelHook</string>
+	  </array>  
+	
+	<key>BBLMCommentLineDefault</key>
+	  <string>//</string>
+	
+	<key>Language Features</key>
+  	<dict>
+  	  <key>Identifier and Keyword Character Class</key>
+  	  <string>A-Za-z0-9_!</string>
+	    <key>Open Block Comments</key>        <string>/*</string>
+	    <key>Close Block Comments</key>       <string>*/</string>
+	    <key>Open Line Comments</key>         <string>//</string>
+	    <key>Open Strings 1</key>             <string>"</string>
+	    <key>Close Strings 1</key>            <string>"</string>
+	    <key>Open Strings 2</key>             <string>'</string>
+	    <key>Close Strings 2</key>            <string>'</string>
+	    <key>Escape Char in Strings 1</key>   <string>\</string>
+	    <key>End-of-line Ends Strings 1</key> <true/>
+	    <key>End-of-line Ends Strings 2</key> <true/>
+	    <key>Open Parameter Lists</key>       <string>&lt;</string>
+	    <key>Close Parameter Lists</key>      <string>&gt;</string>
+	    <key>Terminator for Prototypes 1</key> <string>;</string>
+	    <key>Open Statement Blocks</key>      <string>{</string>
+	    <key>Close Statement Blocks</key>     <string>}</string>
+      <key>Function Pattern</key>
+        <string><![CDATA[(?x:
+                (?P<function>
+                  ^
+                  [\s\n\r]*
+                  (?P<function_name>
+                    (?>
+                      (def) |
+                      (defm) |
+                      (class) |
+                      (multiclass) |
+                    )
+                    \s+
+                    [:a-zA-Z0-9_]+
+                  )
+                  [^{}\n\r]*
+                  (?P<function_body>
+                    (?>                                            
+                      {[^{}]*}                      
+                    ) 
+                    (?>
+                      \s*{[^{}]*}
+                    )?
+                  )
+                  [^{}\n\r]*$
+                )
+              )]]>
+        </string>
+	  </dict>
+</dict>
+</plist>
