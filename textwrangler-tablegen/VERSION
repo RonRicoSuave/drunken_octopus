@@ -1,5 +1,10 @@
 TableGen.plist
 
+v0.2
+--------------------------------------------------------------------------------
+Updated keyword lists to include most target-specific functions, dag nodes, and
+base classes.   Also organized them somewhat better. 
+
 v0.1
 --------------------------------------------------------------------------------
 Initial version, has basic syntax highlighting and partially functional folding

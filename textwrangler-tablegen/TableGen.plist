@@ -8,6 +8,10 @@
 	<key>BBLMLanguageDisplayName</key> 				<string>Tablegen</string>
 	<key>BBLMLanguageCode</key>				 				<string>TGEN</string>
 	<key>BBLMPreferredFilenameExtension</key> <string>td</string>
+	<key>BBLMFileNamesToMatch</key>           
+	  <array>
+	    <string>*.td</string>
+	  </array>
 	<key>BBLMSupportTextCompletion</key>			<true/>
   <key>BBLMScansFunctions</key>             <true/>
 	<key>BBLMCanSpellCheckCodeRuns</key>			<false/>
@@ -27,25 +31,38 @@
 	    <string>class</string>
 	    <string>multiclass</string>
 	    <string>let</string>
+	    <string>list</string>
+	    <string>dag</string>
 	    <string>def</string>
 	    <string>defm</string>
+	    <string>f16</string>
+	    <string>f32</string>
+	    <string>f64</string>
 	    <string>field</string>
+	    <string>fpimm</string>
 	    <string>include</string>
 	    <string>in</string>
-	    <string>int1</string>
-	    <string>int8</string>
-	    <string>int16</string>
-	    <string>int32</string>
-	    <string>int64</string>
-	    <string>uint8</string>
-	    <string>uint16</string>
-	    <string>uint32</string>
-	    <string>uint64</string>
+	    <string>ins</string>
+	    <string>int</string>
+	    <string>int8_t</string>
+	    <string>int16_t</string>
+	    <string>int32_t</string>
+	    <string>int64_t</string>
+	    <string>outs</string>
+	    <string>uint8_t</string>
+	    <string>uint16_t</string>
+	    <string>uint32_t</string>
+	    <string>uint64_t</string>
  	    <string>i1</string>
  	    <string>i8</string>
  	    <string>i16</string>
  	    <string>i32</string>
  	    <string>i64</string>
+ 	    <string>i1imm</string>
+ 	    <string>i8imm</string>
+ 	    <string>i16imm</string>
+ 	    <string>i32imm</string>
+ 	    <string>i64imm</string>
 	    <string>string</string>
  	    <string>opnode</string>
  	    <string>Inst</string>
@@ -55,77 +72,151 @@
 	  </array>
 	<key>BBLMPredefinedNameList</key>
 	  <array>
-	    <string>SDNode</string>
-	    <string>ParserMatchClass</string>
-	    <string>Name</string>
- 	    <string>BinOpWithFlagFrag</string>
- 	    <string>PatFrag</string>
- 	    <string>BinOpFrag</string>
- 	    <string>UnOpFrag</string>
- 	    <string>getZExtValue</string>
- 	    <string>ComputeNumSignBits</string>
- 	    <string>SDValue</string>
- 	    <string>EncoderMethod</string>
- 	    <string>OperandType</string>
+      <!-- Method Overrides -->
  	    <string>DecoderMethod</string>
- 	    <string>Operand</string>
- 	    <string>AsmOperandClass</string>
+ 	    <string>EncoderMethod</string>
+ 	    <string>ParserMethod</string>
  	    <string>PrintMethod</string>
- 	    <string>getTargetConstant</string>
- 	    <string>MIOperandInfo</string>
+      <!-- Base Classes -->
+      <string>AddrMode</string>
+      <string>APFloat</string>
+ 	    <string>AsmOperandClass</string>
+ 	    <string>AsmWriter</string>
+ 	    <string>BinOpFrag</string>
+ 	    <string>BinOpWithFlagFrag</string>
  	    <string>ComplexPattern</string>
- 	    <string>SDNodeXForm</string>
- 	    <string>Requires</string>    
+ 	    <string>Domain</string>
+ 	    <string>DwarfRegNum</string>
+ 	    <string>Format</string>
+ 	    <string>FuncUnit</string>
+ 	    <string>IndexMode</string>
  	    <string>Inst</string>
+ 	    <string>InstrInfo</string> 	    
+ 	    <string>Instruction</string>
+ 	    <string>InstrItinClass</string>
+ 	    <string>InstrItinData</string>
+ 	    <string>InstrStage</string>
+ 	    <string>InstAlias</string>
+ 	    <string>MIOperandInfo</string>
+ 	    <string>MnemonicAlias</string>
+ 	    <string>Operand</string>
+	    <string>ParserMatchClass</string>
+	    <string>PatFrag</string>
+	    <string>PatLeaf</string>
+	    <string>Predicate</string>
+	    <string>Processor</string>
+	    <string>ProcessorItineraries</string>
+	    <string>ProcNoItin</string>
  	    <string>PseudoInst</string>
+ 	    <string>RegConstraint</string>
+ 	    <string>Register</string>
+ 	    <string>RegisterClass</string>
+	    <string>SDNode</string>
+ 	    <string>SDNodeXForm</string>
+ 	    <string>SDTypeProfile</string>
+ 	    <string>SDValue</string>
+ 	    <string>SubRegIndex</string>
+ 	    <string>SubRegs</string>
+ 	    <string>SubtargetFeature</string>
+ 	    <string>Target</string>
+ 	    <string>UnOpFrag</string>
+ 	    <string>Value</string>
+      <!-- SDNode Attributes -->
+      <string>SDNPInGlue</string>
+      <string>SDNPOutGlue</string>
+      <string>SDTNone</string>
+      <string>SDTCisVT</string>
+      <string>SDTCisFP</string>
+      <string>SDTCisSameAs</string>
+      <!-- Base Types -->
+ 	    <string>AddressMode</string>
+	    <string>Name</string>
+ 	    <string>OperandType</string>
+ 	    <!-- Instruction Attributes -->
+ 	    <string>AddedComplexity</string>
+      <string>AsmString</string>
+ 	    <string>canFoldAsLoad</string>
+ 	    <string>Constraints</string>
+ 	    <string>DecoderNamespace</string>
  	    <string>Defs</string>
- 	    <string>Uses</string>
+ 	    <string>hasPostISelHook</string>
  	    <string>hasSideEffects</string>
+ 	    <string>InOperandList</string>
+ 	    <string>isBarrier</string>
+ 	    <string>isBranch</string>
+ 	    <string>isCodeGenOnly</string>
+ 	    <string>isIndirectBranch</string>
+ 	    <string>isMoveImm</string>
+ 	    <string>isNotDuplicable</string>
+ 	    <string>isPseudo</string>
+ 	    <string>isRematerializable</string>
+ 	    <string>isTerminator</string>
+ 	    <string>Itinerary</string>
  	    <string>mayLoad</string>
  	    <string>mayStore</string>
- 	    <string>usesCustomInserter</string>
+ 	    <string>Namespace</string>
+ 	    <string>NoHonorSignDependentRounding</string>
  	    <string>neverHasSideEffects</string>
- 	    <string>isNotDuplicable</string>
- 	    <string>InstrItinClass</string>
- 	    <string>AddressMode</string>
- 	    <string>InstAlias</string>
+ 	    <string>OutOperandList</string>
+ 	    <string>Pattern</string>
+ 	    <string>Requires</string>
+ 	    <string>TSFlags</string>   
+ 	    <string>Uses</string>
+ 	    <string>usesCustomInserter</string>
+      <!-- AsmWriter Attributes -->
+      <string>AsmWriterClassName</string>
+      <string>isMCAsmWriter</string>
+      <!-- Target Attributes -->
+      <string>AssemblyWriters</string>
+      <string>InstructionSet</string>
+      <!-- Register Attributes -->
+      <string>AltOrders</string>
+      <string>AltOrdersSelect</string>
+      <string>CopyCost</string>
+      <string>SubRegClasses</string>      
+      <!-- Functions -->      
  	    <string>!strconcat</string>
- 	    <string>Instruction</string>
  	    <string>!cast</string>
- 	    <string>isRematerializable</string>
- 	    <string>canFoldAsLoad</string>
- 	    <string>isBranch</string>
- 	    <string>isTerminator</string>
- 	    <string>isMoveImm</string>
- 	    <string>RegConstraint</string>
- 	    <string>isBarrier</string>
- 	    <string>isIndirectBranch</string>
+ 	    <string>!con</string>
+ 	    <string>!eq</string>
+ 	    <string>getZExtValue</string>
+ 	    <string>getTargetConstant</string>
+ 	    <string>getValueAPF</string>
+ 	    <string>ComputeNumSignBits</string>
+      <!-- Operations and SDNode types -->
+ 	    <string>add</string>
 	    <string>and</string>
-	    <string>xor</string>
+	    <string>bitconvert</string>
+ 	    <string>bswap</string>
+ 	    <string>ctlz</string>	    
 	    <string>fmul</string>
+	    <string>fabs</string>
 	    <string>fadd</string>
+	    <string>fadd_mlx</string>
+	    <string>fdiv</string>
+	    <string>fextend</string>
+	    <string>fmul_su</string>
+	    <string>fneg</string>
+	    <string>fround</string>
+	    <string>fsqrt</string>
 	    <string>fsub</string>
-	    <string>return</string>
+	    <string>fsub_mlx</string>
+ 	    <string>load</string>
+ 	    <string>mul</string>
 	    <string>or</string>
+ 	    <string>PKHTB</string>
+	    <string>return</string>
+ 	    <string>REVSH</string>
+	    <string>rotr</string>
+ 	    <string>sext_inreg</string>
+ 	    <string>sextloadi8</string>
+ 	    <string>sextloadi16</string>
 	    <string>shl</string>
 	    <string>srl</string>
 	    <string>sra</string>
-	    <string>rotr</string>	 
- 	    <string>load</string>
- 	    <string>zextloadi16</string>
- 	    <string>sextloadi16</string>
+	    <string>xor</string>
  	    <string>zextloadi8</string>
- 	    <string>sextloadi8</string>
- 	    <string>PKHTB</string>
- 	    <string>REVSH</string>
- 	    <string>bswap</string>
- 	    <string>ctlz</string>	    
- 	    <string>AddedComplexity</string>
- 	    <string>mul</string>
- 	    <string>add</string>
- 	    <string>sext_inreg</string>
- 	    <string>MnemonicAlias</string>
- 	    <string>hasPostISelHook</string>
+ 	    <string>zextloadi16</string>
 	  </array>  
 	
 	<key>BBLMCommentLineDefault</key>
