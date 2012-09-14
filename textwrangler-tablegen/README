@@ -1,15 +1,13 @@
 TableGen.plist
 
-TableGen.plist contains a user-defined language for TextWrangler / BBEdit which 
-enables highlighting and (partial) folding for LLVM TableGen (.td) files.  
-It is currently an early version, and most of the functionality is for Target 
-specific files (particularly the Instruction definitions).  It will not fold 
-all definitions, but this is being worked on. 
+TableGen.plist contains a user-defined language for TextWrangler / BBEdit which enables highlighting and folding for LLVM TableGen (.td) files.  Unlike the samples included with LLVM (for vim and emacs), it sets many of the commonly used base classes, functions, and dag types as keywords.  If you just want base statements (class, multiclass, def, etc)  It is currently an early version, and all of the keywording is for target specific .td files.  It will not fold all definitions yet,  but this is being worked on.
 
 Installing:
 On Mac, copy this file to 
 ~/Library/Application Support/TextWrangler/Language Modules/
 and restart TextWrangler.  BBEdit should be a similar install.  
 
-Contributors (feel free to add your name to the list): 
+Anyone may contribute to this project.  If you do so, feel free to add your name below.
+
+Contributors: 
   Gordon Keiser (gordonkeiser@gmail.com)
